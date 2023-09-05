@@ -33,7 +33,7 @@ public class Cockroach  extends Thread {
 				winner = winner == 0 ? number : winner;
 			}				
 		}
-		System.out.printf("thread %d ended  i=%d winner = %d\n", number, i, winner);
+		System.out.printf("thread %d ended  i=%d (from %d) winner = %d\n", number, i,numCycle, winner);
 	}
 	
 }
