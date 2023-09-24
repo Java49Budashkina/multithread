@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.Random;
 import java.util.stream.IntStream;
 
-public class RaceAppl {
+public class RaceAppl {  
 	static int minDistance = 10;  
 	static int maxDistance = 100;
 	static int minSleep = 2;  

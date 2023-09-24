@@ -3,12 +3,14 @@ package hw45;
 import java.time.Instant;
 import java.util.ArrayList;
 import java.util.Random;
+import java.util.concurrent.locks.*;
 
 public class Race {
 	private int distance;
 	private int minSleep;
 	private int maxSleep;
 	private ArrayList<Runner> resultsTable;
+	final Lock lock = new ReentrantLock(true);
 	private Instant startTime;
 	public Race(int distance, int minSleep, int maxSleep, ArrayList<Runner> resultsTable, Instant startTime) {
 		this.distance = distance;
